@@ -31,7 +31,7 @@ class Rover {
       });
 
       let receiveMessageObject = {
-         message: message,
+         message: message.name,
          results: resultsArray
       };
       console.log(commandsArray) // get rid of this line when done

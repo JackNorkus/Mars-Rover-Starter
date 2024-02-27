@@ -24,7 +24,7 @@ describe("Rover class", function() {
     ];
     let message = new Message('Test message', commands);
     let response = rover.receiveMessage(message);
-    expect(response.message.name).toBe('Test message');
+    expect(response.message).toBe('Test message');
   });
 
   it("response returned by receiveMessage includes two results if two commands are sent in the message", function() {
